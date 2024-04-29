@@ -28,7 +28,7 @@ class Post(models.Model):
     updated_at = models.DateField(auto_now=True)
     title = models.CharField(max_length=255)
     content = models.TextField(blank=True)
-    image = models.ImageField(upload_to='images/', default='../default_profile_a7tgdw', blank=True)
+    image = models.ImageField(upload_to='images/', default='../default_post_brequy', blank=True)
     image_filter = models.CharField(
         max_length=32,
         choices=image_filter_choices,
